@@ -16,20 +16,25 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class Pingdol {
     public static void main(String[] args) {
         System.out.println("===================");
-        System.out.println("PROGRAM KOTAK AJAIB");
+        System.out.println("PROGRAM PINGDOL");
         System.out.println("===================");
+        System.out.println("DIBUAT OLEH:");
+        System.out.println("- MOHAMMAD ABDUL QUDDUS SALAM");
+        System.out.println("- JOHANNES SEBASTIAN TAMPUBOLON");
+        System.out.println("- MOHAMMAD ABDUL QUDDUS SALAM");
+        System.out.println("- REZA ABDUL LATIF");
+
     }
 
-    public static int[][] input() {
+    public static int[] input() {
         Scanner scan = new Scanner(System.in);
         char inputChar = scan.nextLine().toLowerCase().charAt(0);
         int baris = 0;
         int kolom = 0;
         while (true) {
-            System.out.printf("Pilih kotak (baris %d | kolom %d)", baris, kolom);
             if (inputChar != 'a' && inputChar != 'w' && inputChar != 's' && inputChar != 'd') {
                 System.out.println("Gunakan WASD untuk memilih kotak!");
                 continue;
@@ -46,7 +51,6 @@ public class Main {
                     break;
                 case 'd':
                     System.out.println();
-                    break;
                     continue;
             }
         }
